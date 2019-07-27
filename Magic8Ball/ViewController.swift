@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         updateImage()
     }
     
+    @IBAction func shakeBtn(_ sender: Any) {
+        updateImage()
+    }
+    
     func updateImage() -> Void {
         let randomNum = Int.random(in: 0 ... 4)
         EightBallImage.image = UIImage(named: arr[randomNum])
